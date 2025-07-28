@@ -1,0 +1,81 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Стили шапки */
+.header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Раздел 'Обо мне' */
+.section {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.about img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+h2{
+    text-align: center;
+}
+
+
+/* Раздел 'Навыки' */
+.skills ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+/* Подвал */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .about img {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
